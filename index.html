@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Orphanaid Kenya — Restoring Dignity. Protecting Futures. Building Hope.</title>
+<meta name="description" content="Orphanaid Kenya is a registered Kenyan charitable organisation building a purpose-built, secure residential campus for orphaned and vulnerable girls. Reg. CLG-BXFAQ6.">
+<meta property="og:title" content="Orphanaid Kenya — Restoring Dignity. Protecting Futures. Building Hope.">
+<meta property="og:description" content="Orphanaid Kenya is a registered Kenyan charitable organisation building a purpose-built, secure residential campus for orphaned and vulnerable girls. Reg. CLG-BXFAQ6.">
+<meta property="og:url" content="https://orphanaidkenya.org">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--teal:#005F5F;--teal-mid:#007A7A;--teal-light:#E0F4F4;--gold:#B07D2A;--dark:#1A1A2E;--charcoal:#2C2C3A;--mid:#666677;--gray:#F5F7F8;--border:#E2E8E8;--white:#FFFFFF;--off:#FAFAF8}
+body{font-family:'DM Sans',system-ui,sans-serif;color:var(--charcoal);background:var(--off);line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--teal);color:#fff}
+.wrap{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+.wrap-mid{max-width:900px;margin:0 auto;padding:0 1.5rem}
+/* HERO */
+.hero{min-height:92vh;display:flex;align-items:center;justify-content:center;padding:6rem 1.5rem 4rem;position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(26,26,46,.92) 0%,rgba(0,95,95,.85) 60%,rgba(26,26,46,.78) 100%),url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:100px;background:linear-gradient(to top,var(--off),transparent);pointer-events:none}
+.hero-inner{max-width:820px;text-align:center;position:relative;z-index:1}
+.hero-badge{display:inline-block;background:rgba(176,125,42,.15);border:1px solid rgba(176,125,42,.5);color:var(--gold);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;padding:.4rem 1.1rem;border-radius:20px;margin-bottom:1.75rem;animation:fadeUp .7s ease both}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,6vw,4.8rem);font-weight:900;color:#fff;line-height:1.1;margin-bottom:1.4rem;animation:fadeUp .7s ease .1s both}
+.hero h1 em{color:var(--gold);font-style:normal}
+.hero-sub{font-size:clamp(.95rem,2vw,1.15rem);color:rgba(255,255,255,.82);max-width:620px;margin:0 auto 2.25rem;line-height:1.85;animation:fadeUp .7s ease .2s both}
+.hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;animation:fadeUp .7s ease .3s both}
+/* BUTTONS */
+.btn{display:inline-block;padding:.85rem 1.9rem;border-radius:4px;font-weight:700;font-size:.92rem;letter-spacing:.04em;cursor:pointer;transition:.25s;text-align:center}
+.btn-gold{background:var(--gold);color:#fff;border:2px solid var(--gold)}
+.btn-gold:hover{background:#9A6D22;border-color:#9A6D22;transform:translateY(-1px)}
+.btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.55)}
+.btn-outline:hover{background:rgba(255,255,255,.1);border-color:#fff;transform:translateY(-1px)}
+.btn-teal{background:var(--teal);color:#fff;border:2px solid var(--teal)}
+.btn-teal:hover{background:var(--teal-mid);transform:translateY(-1px)}
+/* STAT BAR */
+.stat-bar{display:flex;flex-wrap:wrap;margin-top:3.5rem;animation:fadeUp .7s ease .4s both}
+.stat-item{flex:1;min-width:140px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(6px);padding:1.1rem 1.5rem;text-align:center}
+.stat-item:first-child{border-radius:4px 0 0 4px}
+.stat-item:last-child{border-radius:0 4px 4px 0}
+.stat-num{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:700;color:var(--gold);line-height:1;display:block}
+.stat-lbl{font-size:.72rem;color:rgba(255,255,255,.7);letter-spacing:.06em;text-transform:uppercase;margin-top:.3rem}
+/* SECTION */
+.section{padding:5rem 0}
+.sec-label{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--gold);margin-bottom:.6rem}
+.sec-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.7rem);font-weight:700;color:var(--dark);line-height:1.2;margin-bottom:1.1rem}
+.sec-title em{color:var(--teal);font-style:normal}
+.sec-body{font-size:1.02rem;color:var(--mid);line-height:1.85;max-width:660px}
+.divider{width:44px;height:3px;background:var(--gold);border-radius:2px;margin:1.25rem 0}
+/* GRID */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.three-col{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.four-col{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+@media(max-width:860px){.two-col,.three-col,.four-col{grid-template-columns:1fr}}
+@media(max-width:600px){.section{padding:3.5rem 0}}
+/* CARD */
+.card{background:#fff;border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:.25s}
+.card:hover{box-shadow:0 10px 36px rgba(0,0,0,.1);transform:translateY(-3px)}
+.card-img{width:100%;height:210px;object-fit:cover}
+.card-body{padding:1.5rem}
+.card-badge{display:inline-block;background:var(--teal-light);color:var(--teal);font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.22rem .6rem;border-radius:20px;margin-bottom:.6rem}
+.card-title{font-weight:700;font-size:1.02rem;color:var(--dark);margin-bottom:.5rem}
+.card-text{font-size:.9rem;color:var(--mid);line-height:1.7}
+/* PHASE CARD */
+.phase-card{background:#fff;border:1px solid var(--border);border-top:4px solid var(--teal);border-radius:4px;padding:2rem;transition:.25s}
+.phase-card:hover{box-shadow:0 8px 28px rgba(0,95,95,.12);transform:translateY(-2px)}
+.phase-card.gold-top{border-top-color:var(--gold)}
+.phase-num{font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;color:var(--teal-light);line-height:1;margin-bottom:.4rem}
+.phase-card.gold-top .phase-num{color:#f5e6c8}
+.phase-title{font-weight:700;font-size:1.02rem;color:var(--dark);margin-bottom:.3rem}
+.phase-time{font-size:.75rem;color:var(--gold);font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.9rem}
+.phase-list{list-style:none}
+.phase-list li{font-size:.87rem;color:var(--mid);padding:.28rem 0 .28rem 1.1rem;position:relative;line-height:1.5}
+.phase-list li::before{content:'→';position:absolute;left:0;color:var(--teal)}
+/* DARK BAND */
+.dark-band{background:var(--dark);padding:5rem 0}
+.dark-band .sec-title{color:#fff}
+/* TEAL BAND */
+.teal-band{background:var(--teal);padding:4.5rem 0}
+/* QUOTE */
+.quote-box{background:var(--teal-light);border-left:4px solid var(--teal);padding:1.75rem 2.25rem;border-radius:0 4px 4px 0;margin:2.5rem 0}
+.quote-text{font-family:'Playfair Display',serif;font-size:clamp(1.05rem,2vw,1.3rem);font-style:italic;color:var(--dark);line-height:1.6;margin-bottom:.6rem}
+.quote-attr{font-size:.83rem;color:var(--gold);font-weight:700}
+/* PAGE HERO */
+.page-hero{background:linear-gradient(135deg,var(--dark) 0%,var(--teal) 100%);padding:8rem 1.5rem 4.5rem;text-align:center}
+.page-hero-label{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:.9rem}
+.page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.4rem);font-weight:900;color:#fff;line-height:1.15;margin-bottom:1rem}
+.page-hero p{font-size:1.08rem;color:rgba(255,255,255,.82);max-width:580px;margin:0 auto;line-height:1.8}
+/* VALUE CARD */
+.val-card{background:#fff;border:1px solid var(--border);border-top:4px solid var(--gold);border-radius:4px;padding:1.75rem;transition:.25s}
+.val-card:hover{box-shadow:0 6px 22px rgba(0,0,0,.08)}
+.val-icon{font-size:1.75rem;margin-bottom:.75rem}
+.val-title{font-weight:700;font-size:.98rem;color:var(--dark);margin-bottom:.4rem}
+.val-text{font-size:.88rem;color:var(--mid);line-height:1.7}
+/* REG STRIP */
+.reg-strip{background:var(--teal-light);border:1px solid rgba(0,95,95,.18);border-radius:4px;padding:1.4rem 1.75rem;display:flex;flex-wrap:wrap;gap:1.5rem;margin:2rem 0}
+.reg-item{display:flex;flex-direction:column;gap:.15rem}
+.reg-lbl{font-size:.66rem;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:.12em}
+.reg-val{font-size:.9rem;font-weight:600;color:var(--dark)}
+/* INVEST TABLE */
+.invest-table{width:100%;border-collapse:collapse;margin-top:1.75rem}
+.invest-table th{background:var(--dark);color:#fff;padding:.85rem 1.2rem;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;text-align:left}
+.invest-table th:nth-child(2){text-align:right}
+.invest-table th:nth-child(3){text-align:center}
+.invest-table td{padding:.82rem 1.2rem;border-bottom:1px solid var(--border);font-size:.93rem}
+.invest-table tr:nth-child(even) td{background:var(--gray)}
+.invest-table td:nth-child(2){text-align:right;font-weight:700;color:var(--teal)}
+.invest-table td:nth-child(3){text-align:center}
+.invest-table .total td{background:var(--teal);color:#fff;font-weight:700}
+.invest-table .total td:nth-child(2){color:var(--gold)}
+/* TIER GRID */
+.tier-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1rem;margin-top:2rem}
+.tier-card{background:#fff;border:2px solid var(--border);border-radius:4px;padding:1.4rem;text-align:center;transition:.25s;position:relative}
+.tier-card:hover{border-color:var(--teal);box-shadow:0 6px 22px rgba(0,95,95,.13);transform:translateY(-2px)}
+.tier-card.featured{border-color:var(--gold)}
+.tier-badge{position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:var(--gold);color:#fff;font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.18rem .7rem;border-radius:20px;white-space:nowrap}
+.tier-name{font-size:.7rem;font-weight:700;color:var(--mid);text-transform:uppercase;letter-spacing:.12em;margin-bottom:.4rem}
+.tier-amount{font-family:'Playfair Display',serif;font-size:1.55rem;font-weight:700;color:var(--teal);margin-bottom:.4rem}
+.tier-impact{font-size:.8rem;color:var(--mid);line-height:1.6}
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:3.5rem}
+@media(max-width:768px){.contact-grid{grid-template-columns:1fr}}
+.contact-form{background:#fff;padding:2.25rem;border-radius:4px;border:1px solid var(--border)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media(max-width:500px){.form-row{grid-template-columns:1fr}}
+.form-group{margin-bottom:1.1rem}
+.form-group label{display:block;font-size:.78rem;font-weight:700;color:var(--charcoal);margin-bottom:.35rem;letter-spacing:.03em}
+.form-group input,.form-group textarea,.form-group select{width:100%;padding:.72rem 1rem;border:1.5px solid var(--border);border-radius:4px;font-family:'DM Sans',sans-serif;font-size:.9rem;color:var(--charcoal);background:var(--off);transition:.22s;outline:none}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--teal);background:#fff;box-shadow:0 0 0 3px rgba(0,95,95,.08)}
+.form-group textarea{resize:vertical;min-height:110px}
+.btn-submit{width:100%;background:var(--teal);color:#fff;border:none;padding:.88rem 2rem;border-radius:4px;font-family:'DM Sans',sans-serif;font-weight:700;font-size:.98rem;cursor:pointer;transition:.25s;letter-spacing:.04em}
+.btn-submit:hover{background:var(--teal-mid);transform:translateY(-1px)}
+/* SDG */
+.sdg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:1rem}
+.sdg-item{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:4px;padding:1.2rem;text-align:center}
+.sdg-num{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:900;color:var(--gold);margin-bottom:.2rem}
+.sdg-label{font-size:.78rem;color:rgba(255,255,255,.9);font-weight:700;margin-bottom:.25rem}
+.sdg-desc{font-size:.72rem;color:rgba(255,255,255,.65);line-height:1.5}
+/* FOUNDER */
+.founder-card{background:var(--dark);border-radius:4px;padding:2.5rem;display:grid;grid-template-columns:auto 1fr;gap:2.25rem;align-items:start}
+@media(max-width:600px){.founder-card{grid-template-columns:1fr}}
+.founder-av{width:110px;height:110px;border-radius:50%;border:4px solid var(--gold);background:linear-gradient(135deg,var(--teal),var(--teal-mid));display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:2.6rem;color:#fff;font-weight:700;flex-shrink:0}
+.founder-name{font-family:'Playfair Display',serif;font-size:1.55rem;font-weight:700;color:#fff;margin-bottom:.2rem}
+.founder-role{font-size:.78rem;color:var(--gold);font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.9rem}
+.founder-bio{font-size:.92rem;color:rgba(255,255,255,.75);line-height:1.8;margin-bottom:1.25rem}
+.founder-tl{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}
+@media(max-width:600px){.founder-tl{grid-template-columns:1fr}}
+.tl-item{display:flex;gap:.65rem;align-items:flex-start}
+.tl-year{font-size:.72rem;font-weight:700;color:var(--gold);white-space:nowrap;min-width:76px;padding-top:.1rem}
+.tl-role{font-size:.8rem;color:rgba(255,255,255,.65);line-height:1.5}
+/* IMG FRAME */
+.img-frame{position:relative}
+.img-frame img{border-radius:4px;width:100%;object-fit:cover;aspect-ratio:4/3}
+.img-frame::after{content:'';position:absolute;bottom:-11px;right:-11px;width:55%;height:55%;border:3px solid var(--gold);border-radius:4px;z-index:-1}
+.img-badge{position:absolute;bottom:18px;left:18px;background:var(--dark);color:#fff;padding:.55rem .9rem;border-radius:4px;font-size:.78rem;font-weight:700;border-left:3px solid var(--gold)}
+/* FOOT */
+footer{background:var(--dark);color:rgba(255,255,255,.7);padding:4rem 0 2rem}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:2.5rem}
+@media(max-width:768px){.foot-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.foot-grid{grid-template-columns:1fr}}
+.foot-name{font-family:'Playfair Display',serif;font-size:1.25rem;color:#fff;font-weight:700;margin-bottom:.65rem}
+.foot-desc{font-size:.86rem;line-height:1.8;margin-bottom:1.1rem}
+.foot-reg{font-size:.75rem;color:var(--gold);letter-spacing:.07em}
+.foot-col h4{font-size:.74rem;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.12em;margin-bottom:.85rem}
+.foot-link{display:block;font-size:.86rem;color:rgba(255,255,255,.6);padding:.28rem 0;transition:.2s}
+.foot-link:hover{color:var(--gold)}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:1.4rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.8rem}
+.social-links{display:flex;gap:.65rem}
+.social-link{width:34px;height:34px;background:rgba(255,255,255,.08);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.82rem;transition:.2s;cursor:pointer;color:rgba(255,255,255,.7)}
+.social-link:hover{background:var(--gold);color:#fff}
+/* ANIM */
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+</style>
+
+</head>
+<body>
+<nav style="background:rgba(26,26,46,.97);position:sticky;top:0;z-index:999;border-bottom:1px solid rgba(176,125,42,.3);padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:68px">
+  <a href="index.html" style="display:flex;flex-direction:column;text-decoration:none">
+    <span style="font-family:'Playfair Display',serif;font-weight:700;font-size:1.1rem;color:#fff;letter-spacing:.04em">Orphanaid Kenya</span>
+    <span style="font-size:.6rem;color:#B07D2A;letter-spacing:.12em;text-transform:uppercase;font-weight:700">Reg. CLG-BXFAQ6 &nbsp;·&nbsp; Est. 2021</span>
+  </a>
+  <div style="display:flex;gap:.2rem;align-items:center;flex-wrap:wrap">
+    <a href="index.html" style="font-size:.84rem;font-weight:500;color:rgba(255,255,255,.75);padding:.45rem .8rem;border-radius:4px;transition:.2s;text-decoration:none">Home</a>
+    <a href="about.html" style="font-size:.84rem;font-weight:500;color:rgba(255,255,255,.75);padding:.45rem .8rem;border-radius:4px;transition:.2s;text-decoration:none">About Us</a>
+    <a href="programme.html" style="font-size:.84rem;font-weight:500;color:rgba(255,255,255,.75);padding:.45rem .8rem;border-radius:4px;transition:.2s;text-decoration:none">Our Programme</a>
+    <a href="invest.html" style="font-size:.84rem;font-weight:500;color:rgba(255,255,255,.75);padding:.45rem .8rem;border-radius:4px;transition:.2s;text-decoration:none">Invest</a>
+    <a href="contact.html" style="font-size:.84rem;font-weight:700;color:#fff;background:#B07D2A;padding:.45rem 1rem;border-radius:4px;transition:.2s;text-decoration:none">Partner With Us</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">Kiambu Highlands, Kenya &nbsp;·&nbsp; Est. 2021 &nbsp;·&nbsp; Reg. CLG-BXFAQ6</div>
+    <h1>Every Girl Deserves<br><em>Safety, Dignity</em><br>and a Future</h1>
+    <p class="hero-sub">Orphanaid Kenya is a registered charitable organisation building a purpose-built, secure residential campus for orphaned and highly vulnerable girls in Kenya — protecting them from trafficking, exploitation, and abuse.</p>
+    <div class="hero-btns">
+      <a class="btn btn-gold" href="invest.html">Become a Founding Donor</a>
+      <a class="btn btn-outline" href="about.html">Discover Our Story</a>
+    </div>
+    <div class="stat-bar">
+      <div class="stat-item"><span class="stat-num">2.4M+</span><div class="stat-lbl">Orphaned children in Kenya</div></div>
+      <div class="stat-item"><span class="stat-num">USD 500K</span><div class="stat-lbl">Phase 1 funding target</div></div>
+      <div class="stat-item"><span class="stat-num">8 Acres</span><div class="stat-lbl">Identified Kiambu site</div></div>
+      <div class="stat-item"><span class="stat-num">100%</span><div class="stat-lbl">Kenya-led and governed</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CRISIS BAND -->
+<section class="dark-band">
+  <div class="wrap">
+    <p style="font-family:'Playfair Display',serif;font-size:clamp(1.3rem,2.5vw,2rem);font-weight:700;color:#fff;line-height:1.4;margin-bottom:2.25rem;border-left:4px solid #B07D2A;padding-left:1.4rem">"In Kenya today, an unprotected orphaned girl is not just vulnerable. She is a target — for trafficking networks, for organ-harvesting syndicates, for criminal organisations that exploit the absence of family protection. This is documented. This is growing. And it is preventable."</p>
+    <div class="four-col">
+      <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-top:3px solid #007A7A;border-radius:4px;padding:1.6rem">
+        <div style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:900;color:#B07D2A;line-height:1;margin-bottom:.4rem">2.4M+</div>
+        <div style="font-size:.78rem;font-weight:700;color:rgba(255,255,255,.9);text-transform:uppercase;letter-spacing:.07em;margin-bottom:.65rem">Orphaned Children</div>
+        <div style="font-size:.88rem;color:rgba(255,255,255,.6);line-height:1.7">Girls without family protection face acute, targeted risks far beyond poverty — including organ harvesting and trafficking networks.</div>
+      </div>
+      <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-top:3px solid #B07D2A;border-radius:4px;padding:1.6rem">
+        <div style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:900;color:#B07D2A;line-height:1;margin-bottom:.4rem">Tier 2</div>
+        <div style="font-size:.78rem;font-weight:700;color:rgba(255,255,255,.9);text-transform:uppercase;letter-spacing:.07em;margin-bottom:.65rem">Trafficking Watch List</div>
+        <div style="font-size:.88rem;color:rgba(255,255,255,.6);line-height:1.7">Kenya is a Tier 2 Watch List country for human trafficking (US TIP Report). Girls are the primary victims identified.</div>
+      </div>
+      <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-top:3px solid #007A7A;border-radius:4px;padding:1.6rem">
+        <div style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:900;color:#B07D2A;line-height:1;margin-bottom:.4rem">&lt;15%</div>
+        <div style="font-size:.78rem;font-weight:700;color:rgba(255,255,255,.9);text-transform:uppercase;letter-spacing:.07em;margin-bottom:.65rem">Access Regulated Care</div>
+        <div style="font-size:.88rem;color:rgba(255,255,255,.6);line-height:1.7">Fewer than 15% of vulnerable children in Kenya access any form of regulated, professionally managed residential protection.</div>
+      </div>
+      <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-top:3px solid #B07D2A;border-radius:4px;padding:1.6rem">
+        <div style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:900;color:#B07D2A;line-height:1;margin-bottom:.4rem">0</div>
+        <div style="font-size:.78rem;font-weight:700;color:rgba(255,255,255,.9);text-transform:uppercase;letter-spacing:.07em;margin-bottom:.65rem">Girls' Campus in Region</div>
+        <div style="font-size:.88rem;color:rgba(255,255,255,.6);line-height:1.7">No purpose-built, self-sufficient, internationally governed residential girls' campus exists in the Kiambu/Limuru region. Orphanaid Kenya is building the first.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO WE ARE -->
+<section class="section" style="background:#fff">
+  <div class="wrap">
+    <div class="two-col">
+      <div>
+        <div class="sec-label">Who We Are</div>
+        <h2 class="sec-title">A Registered Kenyan Institution.<br><em>Built to Last Decades.</em></h2>
+        <div class="divider"></div>
+        <p class="sec-body">Orphanaid Kenya is a Company Limited by Guarantee, incorporated in Kenya on 28 October 2021 (Registration: CLG-BXFAQ6). We are not a temporary relief effort. We are building a permanent, professionally governed, internationally compliant residential institution for orphaned and highly vulnerable girls in the Kiambu Highlands north of Nairobi.</p>
+        <br>
+        <p class="sec-body">Our campus will be entirely self-sufficient — powered by off-grid solar energy, fed by a borehole water system and two acres of agricultural land, and governed to the standards of the Kenya Children Act 2022 and the United Nations Convention on the Rights of the Child.</p>
+        <div class="reg-strip">
+          <div class="reg-item"><div class="reg-lbl">Registration</div><div class="reg-val">CLG-BXFAQ6</div></div>
+          <div class="reg-item"><div class="reg-lbl">Incorporated</div><div class="reg-val">28 October 2021</div></div>
+          <div class="reg-item"><div class="reg-lbl">Type</div><div class="reg-val">Company Limited by Guarantee</div></div>
+          <div class="reg-item"><div class="reg-lbl">Location</div><div class="reg-val">Kiambu County, Kenya</div></div>
+        </div>
+        <a class="btn btn-teal" href="about.html" style="margin-top:1.25rem;display:inline-block">Our Full Story</a>
+      </div>
+      <div class="img-frame">
+        <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=800&q=80" alt="Children in Kenya — Orphanaid Kenya">
+        <div class="img-badge">Kiambu Highlands, Kenya</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHASES PREVIEW -->
+<section class="section" style="background:var(--gray)">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:2.75rem">
+      <div class="sec-label">The Development Model</div>
+      <h2 class="sec-title" style="margin:0 auto">Four Phases.<br><em>One Permanent Legacy.</em></h2>
+      <div class="divider" style="margin:1.25rem auto"></div>
+      <p style="color:var(--mid);max-width:600px;margin:0 auto;font-size:1rem;line-height:1.8">Orphanaid Kenya is designed as a disciplined, phased institution. Each phase delivers documented outcomes that unlock the next. This is how you build something that lasts.</p>
+    </div>
+    <div class="four-col">
+      <div class="phase-card">
+        <div class="phase-num">01</div>
+        <div class="phase-title">Foundation</div>
+        <div class="phase-time">Year 1–2 · USD 500,000</div>
+        <ul class="phase-list">
+          <li>8-acre Kiambu/Limuru land acquisition</li>
+          <li>Off-grid solar power system</li>
+          <li>Borehole water &amp; 50,000L storage</li>
+          <li>Pilot dormitories — 10–20 girls</li>
+          <li>Security, kitchen, administration</li>
+        </ul>
+      </div>
+      <div class="phase-card gold-top">
+        <div class="phase-num">02</div>
+        <div class="phase-title">Pilot Centre</div>
+        <div class="phase-time">Year 2–3</div>
+        <ul class="phase-list">
+          <li>Full safeguarding protocols</li>
+          <li>Education &amp; healthcare launch</li>
+          <li>Trauma-informed rehabilitation</li>
+          <li>Documented outcome framework</li>
+          <li>Staff training — international standards</li>
+        </ul>
+      </div>
+      <div class="phase-card">
+        <div class="phase-num">03</div>
+        <div class="phase-title">Education &amp; Self-Sufficiency</div>
+        <div class="phase-time">Year 3–5</div>
+        <ul class="phase-list">
+          <li>Computer lab, library, workshop</li>
+          <li>Livestock &amp; market gardens</li>
+          <li>Indoor theatre &amp; sports hall</li>
+          <li>Medical clinic expansion</li>
+          <li>Scale to 50–80 girls</li>
+        </ul>
+      </div>
+      <div class="phase-card gold-top">
+        <div class="phase-num">04</div>
+        <div class="phase-title">Legacy &amp; Expansion</div>
+        <div class="phase-time">Year 5+</div>
+        <ul class="phase-list">
+          <li>Full capacity — 80–100 girls</li>
+          <li>Community outreach</li>
+          <li>Social enterprise components</li>
+          <li>Reduced donor dependency</li>
+          <li>First cohort graduates</li>
+        </ul>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2.25rem">
+      <a class="btn btn-teal" href="programme.html">Explore Our Full Programme</a>
+    </div>
+  </div>
+</section>
+
+<!-- SDG BAND -->
+<section class="teal-band">
+  <div class="wrap">
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;color:#fff;text-align:center;margin-bottom:2.25rem">Aligned with the UN Sustainable Development Goals</h2>
+    <div class="sdg-grid">
+      <div class="sdg-item"><div class="sdg-num">SDG 1</div><div class="sdg-label">No Poverty</div><div class="sdg-desc">Residential care, nutrition, clothing &amp; material support</div></div>
+      <div class="sdg-item"><div class="sdg-num">SDG 2</div><div class="sdg-label">Zero Hunger</div><div class="sdg-desc">Campus food gardens, livestock &amp; kitchen infrastructure</div></div>
+      <div class="sdg-item"><div class="sdg-num">SDG 3</div><div class="sdg-label">Good Health</div><div class="sdg-desc">Medical clinic, clean water, mental health counselling</div></div>
+      <div class="sdg-item"><div class="sdg-num">SDG 4</div><div class="sdg-label">Quality Education</div><div class="sdg-desc">Classrooms, computer lab, library, vocational training</div></div>
+      <div class="sdg-item"><div class="sdg-num">SDG 5</div><div class="sdg-label">Gender Equality</div><div class="sdg-desc">Focused specifically on protecting &amp; empowering girls</div></div>
+      <div class="sdg-item"><div class="sdg-num">SDG 16</div><div class="sdg-label">Strong Institutions</div><div class="sdg-desc">Registered, governed, compliant — combating trafficking</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE + CTA -->
+<section class="section" style="background:#fff">
+  <div class="wrap-mid">
+    <div class="quote-box">
+      <p class="quote-text">"I have built hotels. I have built technology businesses. I have built 27 construction projects. Now I want to build futures — and I want to build them properly."</p>
+      <div class="quote-attr">— Mansurali Jiwani, Founder &amp; Director, Orphanaid Kenya</div>
+    </div>
+    <div style="text-align:center;margin-top:3rem">
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.75rem;color:var(--dark);margin-bottom:1rem">Ready to make a difference that lasts?</h3>
+      <p style="color:var(--mid);margin-bottom:2rem;max-width:500px;margin-left:auto;margin-right:auto;line-height:1.8">Phase 1 is funded by people who believe that a child saved today is a future built. Join the founding donors of Orphanaid Kenya.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+        <a class="btn btn-gold" href="invest.html">View Funding Tiers</a>
+        <a class="btn btn-teal" href="contact.html">Contact the Founder</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-name">Orphanaid Kenya</div>
+        <p class="foot-desc">A registered Kenyan charitable organisation providing a safe, secure, and nurturing residential environment for orphaned and highly vulnerable girls. Protecting futures. Restoring dignity. Building hope.</p>
+        <div class="foot-reg">Reg. CLG-BXFAQ6 &nbsp;·&nbsp; Company Limited by Guarantee &nbsp;·&nbsp; Est. 28 Oct 2021</div>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <a class="foot-link" href="index.html">Home</a>
+        <a class="foot-link" href="about.html">About Us</a>
+        <a class="foot-link" href="programme.html">Our Programme</a>
+        <a class="foot-link" href="invest.html">Invest</a>
+        <a class="foot-link" href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <span class="foot-link">info@orphanaidkenya.org</span>
+        <span class="foot-link">+254 700 329 683</span>
+        <span class="foot-link">Kiambu County, Kenya</span>
+        <span class="foot-link">orphanaidkenya.org</span>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <span class="foot-link">CLG-BXFAQ6</span>
+        <span class="foot-link">Kenya Children Act 2022</span>
+        <span class="foot-link">UNCRC Compliant</span>
+        <span class="foot-link">Incorporated 2021</span>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2025 Orphanaid Kenya. All rights reserved. Company Limited by Guarantee Reg. CLG-BXFAQ6, Kiambu County, Kenya.</span>
+      <div class="social-links">
+        <a href="https://www.facebook.com/OrphanaidKenya" target="_blank" class="social-link">f</a>
+        <a href="https://www.instagram.com/OrphanaidKenya" target="_blank" class="social-link">ig</a>
+        <a href="https://www.linkedin.com/company/orphanaid-kenya" target="_blank" class="social-link">in</a>
+        <a href="https://x.com/OrphanaidKenya" target="_blank" class="social-link">𝕏</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
